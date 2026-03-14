@@ -1,0 +1,30 @@
+{
+  "data": {
+    "root": "data/",
+    "feature_type": "hog",
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [8, 8],
+      "cells_per_block": [2, 2]
+    },
+    "val_split": 0.1
+  },
+  "model": {
+    "hidden_sizes": [256, 128],
+    "activation": "relu",
+    "dropout": 0.0
+  },
+  "training": {
+    "optimizer": "sgd",
+    "learning_rate": 0.01,
+    "momentum": 0.9,
+    "batch_size": 64,
+    "epochs": 20,
+    "l2_lambda": 0.0001,
+    "seed": 42
+  },
+  "paths": {
+    "checkpoint_dir": "checkpoints/",
+    "log_dir": "logs/"
+  }
+}

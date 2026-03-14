@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Data & model artifacts
+assignment1/data/MNIST/
+assignment1/checkpoints/*.pt
+assignment1/logs/*.npy
+assignment1/logs/*.png
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
