@@ -20,7 +20,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from skimage.feature import hog
-from torch.utils.data import DataLoader, TensorDataset, random_split
+from torch.utils.data import DataLoader, TensorDataset
 from torchvision import datasets, transforms
 
 
