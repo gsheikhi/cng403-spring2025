@@ -12,8 +12,6 @@ notebook to verify your implementation produces consistent results.
 
 import argparse
 import json
-import os
-import random
 from pathlib import Path
 
 import numpy as np
@@ -25,10 +23,8 @@ from layers import CrossEntropyLoss
 from network import FFNN
 from optimizers import SGD, BatchGD
 
-# Reuse feature extraction from the reference implementation
-import sys
-sys.path.insert(0, os.path.dirname(__file__))
-from reference import load_and_extract, set_seed
+# Import shared utilities
+from data_utils import set_seed, load_and_extract
 
 
 # ---------------------------------------------------------------------------
@@ -148,7 +144,8 @@ def run(config_path: str) -> None:
     set_seed(cfg["training"]["seed"])
 
     # -- Data ----------------------------------------------------------------
-    X_train, y_train, X_val, y_val, X_test, y_test = load_and_extract(cfg["data"])
+    data_root = "data/"
+    X_train, y_train, X_val, y_val, X_test, y_test = load_and_extract(data_root)
     print(f"Train: {X_train.shape}  Val: {X_val.shape}  Test: {X_test.shape}")
 
     tcfg       = cfg["training"]
@@ -228,8 +225,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="CNG403 A1 — Scratch FFNN Training")
     parser.add_argument(
         "--config",
-        default="../configs/scratch_config.json",
-        help="Path to scratch_config.json",
+        default="../configs/config.json",
+        help="Path to config.json",
     )
     args = parser.parse_args()
     run(args.config)
