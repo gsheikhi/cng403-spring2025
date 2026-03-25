@@ -24,9 +24,6 @@ assignment1/
 │   ├── reference.py              # Complete: PyTorch reference implementation
 │   └── data_utils.py             # Complete: Shared data loading and HOG extraction
 │
-├── configs/
-│   └── config.json               # Configuration file (shared by reference and your implementation)
-│
 ├── data/
 │   └── MNIST/                    # Auto-populated with MNIST dataset on first run
 │
@@ -38,7 +35,8 @@ assignment1/
 │   ├── reference_history.npy     # Training history from reference
 │   └── scratch_history.npy       # Your training history
 │
-├── notebook.ipynb                # Main student interface — run this
+├── config.json               # Configuration file (shared by reference and your implementation)
+├── notebook.ipynb                # Main student interface — run 
 └── README.md                     # This file
 ```
 
@@ -196,10 +194,10 @@ python layers.py
 python network.py
 
 # Run full training
-python train.py --config ../configs/config.json
+python train.py --config ../config.json
 
 # Run reference (for comparison)
-python reference.py --config ../configs/config.json
+python reference.py --config ../config.json
 ```
 
 ---
