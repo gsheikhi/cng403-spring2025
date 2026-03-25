@@ -225,7 +225,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="CNG403 A1 — Scratch FFNN Training")
     parser.add_argument(
         "--config",
-        default="../configs/config.json",
+        default="../config.json",
         help="Path to config.json",
     )
     args = parser.parse_args()
