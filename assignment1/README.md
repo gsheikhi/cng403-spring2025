@@ -35,7 +35,7 @@ assignment1/
 │   ├── reference_history.npy     # Training history from reference
 │   └── scratch_history.npy       # Your training history
 │
-├── config.json               # Configuration file (shared by reference and your implementation)
+├── config.json                   # Configuration file (shared by reference and your implementation)
 ├── notebook.ipynb                # Main student interface — run 
 └── README.md                     # This file
 ```
