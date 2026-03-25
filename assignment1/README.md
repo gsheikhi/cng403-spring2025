@@ -44,7 +44,23 @@ assignment1/
 
 ## Your Tasks: What to Implement
 
-You need to implement **5 core components** in two files:
+You need to implement **core components** in three files:
+
+---
+
+## Grading Policy
+
+**Points are awarded ONLY if sanity checks pass.** Each TODO implementation must produce correct results.
+
+| File | Components | Points | Sanity Check Required |
+|------|-----------|--------|----------------------|
+| `layers.py` | Linear.forward/backward, ReLU, Sigmoid, Tanh, CrossEntropyLoss | 40 pts | Cell 11: Must match PyTorch numerically |
+| `network.py` | FFNN.__init__, forward, backward, l2_grad | 30 pts | Cell 15: Must match nn.Sequential |
+| `optimizers.py` | SGD.step (vanilla + momentum) | 20 pts | Cell 15: Must converge correctly |
+| `Hyperparameter Tuning` (Section 8) | Find best config, report test accuracy | 10 pts | Test set evaluation only |
+| **Total** | | **100 pts** | |
+
+**Important**: Your model must achieve **≥95% test accuracy** to pass. Reference achieves 97.14%.
 
 ### 1. **`src/layers.py`** — Neural Network Layers (3 TODOs)
 
@@ -276,4 +292,4 @@ While implementing, refer to:
 - Sanity checks for validation
 - Interactive notebook guide
 
-Good luck! 🚀
+Good luck! 
