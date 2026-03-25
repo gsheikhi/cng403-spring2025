@@ -54,9 +54,9 @@ You need to implement **core components** in three files:
 
 | File | Components | Points | Sanity Check Required |
 |------|-----------|--------|----------------------|
-| `layers.py` | Linear.forward/backward, ReLU, Sigmoid, Tanh, CrossEntropyLoss | 40 pts | Cell 11: Must match PyTorch numerically |
-| `network.py` | FFNN.__init__, forward, backward, l2_grad | 30 pts | Cell 15: Must match nn.Sequential |
-| `optimizers.py` | SGD.step (vanilla + momentum) | 20 pts | Cell 15: Must converge correctly |
+| `layers.py` | Linear.forward/backward, ReLU, Sigmoid, Tanh, CrossEntropyLoss | 40 pts | Must match PyTorch numerically |
+| `network.py` | FFNN.__init__, forward, backward, l2_grad | 30 pts | Must match nn.Sequential |
+| `optimizers.py` | SGD.step (vanilla + momentum) | 20 pts | Must converge correctly |
 | `Hyperparameter Tuning` (Section 8) | Find best config, report test accuracy | 10 pts | Test set evaluation only |
 | **Total** | | **100 pts** | |
 
@@ -241,7 +241,7 @@ python reference.py --config ../config.json
 | `train.py` | Training loop | No — Uses your implementations |
 | `reference.py` | PyTorch reference | No — Study to understand behavior |
 | `data_utils.py` | Data loading + HOG | No — Shared utility |
-| `notebook.ipynb` | Interactive guide | No — Follow the instructions |
+| `notebook.ipynb` | Interactive guide | Yes — Hyperparameter tuning |
 | `config.json` | Hyperparameters | No — Modify to experiment |
 
 ---
@@ -268,28 +268,5 @@ python reference.py --config ../config.json
 
 ---
 
-## Learning Resources
-
-While implementing, refer to:
-
-1. **`reference.py`** — Complete PyTorch implementation
-2. **Sanity checks in each file** — Compare your outputs to PyTorch
-3. **Notebook cell 4-6** — HOG feature visualization
-4. **Notebook cell 11, 15** — Detailed comparison with PyTorch
-
----
-
-## Summary
-
-**Your job:**
-1. Implement 5 components in 2 files (`layers.py`, `network.py`, `optimizers.py`)
-2. Run the notebook end-to-end
-3. Achieve ~97% test accuracy (matching the reference)
-
-**We provide:**
-- Complete data loading and feature extraction
-- Reference PyTorch implementation
-- Sanity checks for validation
-- Interactive notebook guide
 
 Good luck! 
