@@ -50,11 +50,11 @@ assignment2/
 ## Your Tasks: What to Implement
 
 | File | Function | Points | Sanity Check |
-|------|----------|--------|______________|
-| `src/model.py` | `build_model()` | 20 pts | `python src/model.py` |
-| `src/train.py` | `train_one_epoch()` | 25 pts | Training must converge |
-| `src/evaluate.py` | `compute_metrics()` | 15 pts | `python src/evaluate.py` |
-| `src/app.py` | `predict()` + `build_app()` | 20 pts | 5 screenshots required |
+|------|----------|--------|--------------|
+| [src/model.py] | `build_model()` | 20 pts | `python src/model.py` |
+| [src/train.py] | `train_one_epoch()` | 25 pts | Training must converge |
+| [src/evaluate.py] | `compute_metrics()` | 15 pts | `python src/evaluate.py` |
+| [src/app.py] | `predict()` + `build_app()` | 20 pts | 5 screenshots required |
 | Questions (Q1–Q4) | Written answers in notebook | 20 pts | — |
 | **Total** | | **100 pts** | |
 
