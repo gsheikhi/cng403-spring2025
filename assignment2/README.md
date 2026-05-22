@@ -95,7 +95,7 @@ data/positive/
 | Val | 5 | 5 | 10 |
 | Test | 5 | 5 | 10 |
 
-Negative class is fixed for all students: George W. Bush, Colin Powell, Tony Blair, Donald Rumsfeld, Gerhard Schroeder (LFW indices 0–5 each).
+Negative class is fixed for all students: Serena Williams, Angelina Jolie, Alejandro Toledo, Recep Tayyip Erdogan, George W Bush.
 
 ---
 
