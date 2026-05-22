@@ -38,20 +38,7 @@ def build_model(backbone_name: str = "resnet18", num_classes: int = 2) -> nn.Mod
       4. Return the modified model.
 
     Note: Do NOT unfreeze the backbone. Only the new head should be trainable.
-    """
 
-    # ── SOLUTION (remove before distributing to students) ────────────────────
-    model = load_pretrained_backbone(backbone_name)
-
-    for param in model.parameters():
-        param.requires_grad = False
-
-    in_features = model.fc.in_features      # 512 for ResNet18
-    model.fc    = nn.Linear(in_features, num_classes)  # new trainable head
-
-    return model
-    # ─────────────────────────────────────────────────────────────────────────
-    # """
     raise NotImplementedError("Implement build_model() in src/model.py")
 
 
